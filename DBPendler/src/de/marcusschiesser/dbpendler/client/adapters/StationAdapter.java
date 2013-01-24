@@ -12,12 +12,12 @@ public class StationAdapter extends ArrayAdapter<StationVO> {
 
 	public StationAdapter(Context context) {
 		super(context, android.R.layout.simple_dropdown_item_1line);
+		setNotifyOnChange(true);
 		resource = new StationMockResource();
 		StationVO[] stations = resource.getList(null);
-		for(StationVO station: stations) {
+		for (StationVO station : stations) {
 			add(station);
 		}
-		setNotifyOnChange(true);
 	}
-	
+
 }
