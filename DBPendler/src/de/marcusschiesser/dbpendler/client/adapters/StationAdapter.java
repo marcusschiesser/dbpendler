@@ -6,7 +6,7 @@ import de.marcusschiesser.dbpendler.client.services.resources.mocks.StationMockR
 import de.marcusschiesser.dbpendler.common.resources.StationResource;
 import de.marcusschiesser.dbpendler.common.vo.StationVO;
 
-public class StationAdapter extends ArrayAdapter<StationVO> {
+public class StationAdapter extends ArrayAdapter<String> {
 
 	private StationResource resource;
 
@@ -16,7 +16,7 @@ public class StationAdapter extends ArrayAdapter<StationVO> {
 		resource = new StationMockResource();
 		StationVO[] stations = resource.getList(null);
 		for (StationVO station : stations) {
-			add(station);
+			add(station.getValue());
 		}
 	}
 

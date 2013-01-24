@@ -23,7 +23,7 @@ public class ConnectionOverviewAdapter extends ResourceCursorAdapter {
 	}
 
 	public static String formatConnection(ConnectionVO connectionVO) {
-		String formated = String.format("%s %tR - %s %tR", connectionVO.getStart(), connectionVO.getStartTime(), connectionVO.getDestination(), connectionVO.getDestinationTime());
+		String formated = String.format("%s %tR - %s %tR", connectionVO.getStart().getValue(), connectionVO.getStartTime(), connectionVO.getDestination().getValue(), connectionVO.getDestinationTime());
 		return formated;
 	}
 }

@@ -1,5 +1,8 @@
 package de.marcusschiesser.dbpendler.client.services.resources.mocks;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import de.marcusschiesser.dbpendler.common.resources.StationResource;
 import de.marcusschiesser.dbpendler.common.vo.StationVO;
 
@@ -42,21 +45,25 @@ public class StationMockResource implements StationResource {
 			"Kassel-Wilhelmshöhe Bf", "Marburg (Lahn) Bf", "Treysa Bf",
 			"Wabern Bf", "Wetzlar Bf", "Wiesbaden Hbf" };
 	
-	private StationVO[] result = null;
-
-	public StationVO[] getList(String startsWith) {
+	private Map<String, StationVO> result = null;
+	
+	private Map<String, StationVO> getStations() {
 		if(result==null) {
-			result = new StationVO[STATIONS.length];
+			result = new HashMap<String, StationVO>(STATIONS.length);
 			for (int i = 0; i < STATIONS.length; i++) {
 				String stationName = STATIONS[i];
 				StationVO station = new StationVO(stationName);
-				result[i] = station;
+				result.put(stationName, station);
 			}
 		}
 		return result;
 	}
 
+	public StationVO[] getList(String startsWith) {
+		return getStations().values().toArray(new StationVO[STATIONS.length]);
+	}
+
 	public StationVO get(String id) {
-		return result[Integer.parseInt(id)];
+		return getStations().get(id);
 	}
 }
