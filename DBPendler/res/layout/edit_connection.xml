@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:padding="10dip">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/edit_start"
+		android:layout_marginTop="10dip" />
+	<AutoCompleteTextView android:id="@+id/edit_start" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:completionThreshold="1" />
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/edit_destination"
+		android:layout_marginTop="10dip" />
+	<AutoCompleteTextView android:id="@+id/edit_destination" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:completionThreshold="1" />
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/edit_timelist"
+		android:layout_marginTop="10dip" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="0dip" 
+		android:layout_weight="1">
+		<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:choiceMode="singleChoice" />
+		<TextView android:id="@android:id/empty"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/edit_empty" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10dip"
+		android:gravity="center_horizontal">
+		<Button android:id="@+id/edit_ok" android:text="@string/edit_ok"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:id="@+id/edit_cancel" android:text="@string/edit_cancel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

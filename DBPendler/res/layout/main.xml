@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical"
+	android:padding="10dip">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/main_my_connections" android:textStyle="bold"
+		android:layout_marginTop="10dip" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="wrap_content" android:layout_weight="1" >
+		<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<TextView android:id="@android:id/empty"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/main_no_connections" />
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	android:gravity="center">
+		<Button android:id="@+id/main_new_connection" android:text="@string/main_new_connection"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:id="@+id/main_preferences" android:text="@string/main_preferences"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">DB Pendler</string>
+
+	<string name="main_no_connections">Keine Verbindungen</string>
+	<string name="main_new_connection">Neue Verbindung...</string>
+	<string name="main_preferences">Einstellungen</string>
+	<string name="main_my_connections">Meine Verbindungen:</string>
+	
+	<string name="edit_ok">OK</string>
+	<string name="edit_cancel">Abbrechen</string>
+	<string name="edit_start">Start:</string>
+	<string name="edit_destination">Ziel:</string>
+	<string name="edit_timelist">Tägliche Verbindungen:</string>
+	<string name="edit_empty">Keine Verbindung verfügbar, bitte ändern Sie Start und Ziel.</string>
+	<string name="edit_waiting">Bitte warten...</string>
+	<string name="edit_no_connection">Bitte wählen Sie eine gültige Verbindung aus.</string>
+
+	<string name="menu_edit">Verbindung editieren</string>
+	<string name="menu_delete">Verbindung löschen</string>
+
+	<string name="prefs_ok">OK</string>
+	<string name="prefs_title">DB Pendler - Preferences</string>
+	<string name="prefs_bahncard">Bahnkarte:</string>
+	<string name="prefs_firstclass">1. Klasse</string>
+	<string name="prefs_class">Klasse:</string>
+	<string name="prefs_pin">Mobile PIN:</string>
+	<string name="prefs_seat">Sitzplatz:</string>
+	<string name="prefs_secondclass">2. Klasse</string>
+	<string name="prefs_user_name">Benutzername:</string>
+
+	<string name="prefs_bahncard_prompt">Bitte wählen</string>
+	<string-array name="prefs_bahncard_array">
+		<item>nein</item>
+		<item>Bahncard 25</item>
+		<item>Bahncard 50</item>
+		<item>Bahncard 100</item>
+	</string-array>
+
+	<string name="prefs_seat_prompt">Bitte wählen</string>
+	<string-array name="prefs_seat_array">
+		<item>Großraum Gang</item>
+		<item>Großraum Fenster</item>
+		<item>Abteil</item>
+	</string-array>
+
+	<string name="time_prompt">Buchungstag wählen</string>
+	<string-array name="time_array">
+		<item>Heute</item>
+		<item>Morgen</item>
+		<item>Später</item>
+	</string-array>
+	
+	<string name="confirmation_book">Buchen</string>
+	<string name="confirmation_message">Möchten Sie folgende Verbindung buchen:</string>
+	<string name="confirmation_reserve_seat">Sitzplatz reservieren</string>
+	<string name="confirmation_ok">OK</string>
+	
+	<string name="success_title">Danke</string>
+	<string name="success_message">Vielen Dank für die Buchung. Sie erhalten in Kürze ihr Handyticket per MMS. Viel Spaß beim Bahnfahren!!!</string>
+
+</resources>
